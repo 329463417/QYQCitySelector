@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  QYQCitySelector
+//
+//  Created by qiuyaqingMac on 16/3/29.
+//  Copyright © 2016年 TC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**
+ *  屏幕的物理高度
+ */
+#define ScreenHeight   [UIScreen mainScreen].bounds.size.height
+
+/**
+ *  屏幕的物理宽度
+ */
+#define ScreenWidth    [UIScreen mainScreen].bounds.size.width
+
+/**
+ *  获取RGB颜色
+ */
+#define kTCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+/**
+ *  判断当前设备是否是iOS7
+ */
+#define iOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+
+/**
+ *  判断当前设备是否是iOS8
+ */
+#define iOS8 [[[UIDevice currentDevice]systemVersion] floatValue] >= 8.0
+
+/**
+ *  判断当前设备是否是iOS9
+ */
+#define iOS9 [[[UIDevice currentDevice]systemVersion] floatValue] >= 9.0
+
+/**
+ *  警告提示框
+ */
+#define Alert(msg) [[[UIAlertView alloc]initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
+#endif /* PrefixHeader_pch */
